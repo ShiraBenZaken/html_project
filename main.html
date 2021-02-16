@@ -1,0 +1,498 @@
+<html lang="he" dir="rtl">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap" rel="stylesheet">
+    <!-- MyCSS -->
+    <link href="main.css" rel="stylesheet">
+    <!-- MyJs-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+    <title>אתגר HTML</title>
+    <!--other-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+
+<body>
+    <!--header-->
+
+    <div class="header-wrapper d-flex justify-content-between">
+        <button class="navbar-toggler mobile" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="bd-highlight d-flex">
+            <div class="d-flex logoPart p-2 flex-grow-1 bd-highlight">
+                <img src="img/naom-logo.png">
+                <div class="align-self-end fromYears ">
+                    <p class="m-0 pe-1 fromYear">משנת 2000</p>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light ms-4">
+
+            <div class="desktop">
+                <ul class="navbar-nav mr-auto">
+                    <li class=" d-flex ms-2 nav-item p-1">
+                        <a class="nav-link" href="#">עזרה</a>
+                        <i class="fas fa-question-circle fs-4 icons"></i>
+                    </li>
+                    <li class="border-end  nav-item p-1">
+                        <a class="nav-link " href="#">ההכנות שלי</a>
+                    </li>
+                    <li class=" d-flex me-2 nav-item p-1">
+                        <a class="nav-link" href="#">ישראל ישראלי</a>
+                        <i class="far fa-user-circle fs-4 icons"></i>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="collapse navbar-collapse mobile" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class=" d-flex ms-2 nav-item p-1">
+                <a class="nav-link flex-grow-1" href="#">עזרה</a>
+                <i class="fas fa-question-circle fs-4 icons"></i>
+            </li>
+            <li class="border-end  nav-item p-1">
+                <a class="nav-link flex-grow-1" href="#">ההכנות שלי</a>
+            </li>
+            <li class=" d-flex me-2 nav-item p-1">
+                <a class="nav-link flex-grow-1" href="#">ישראל ישראלי</a>
+                <i class="far fa-user-circle fs-4 icons"></i>
+            </li>
+        </ul>
+    </div>
+    <!--title-->
+    <div class="border-bottom mt-1 backGround startPadings d-flex">
+        <div class="mx-auto header-container-second">
+            <nav aria-label="breadcrumb" class="firstnav">
+                <ol class="breadcrumb p-3">
+                    <li class="breadcrumb-item"><a href="#">ההכנות שלי</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">אתגר HTML</li>
+                </ol>
+            </nav>
+            <nav aria-label="breadcrumb" class="secondnav">
+                <i class="fas fa-long-arrow-alt-right"></i>
+                <p>חזור</p>
+            </nav>
+            </nav>
+            <h1 class="bolds">אתגר HTML</h1>
+            <div class="d-flex">
+                <i id="slideBack" class="twoArows fas fa-chevron-right icons" onclick="goToRight()"></i>
+                <div class="content-wrapper-tags">
+                    <div class=" content-tags px-3" id="containerSlide">
+                        <div class="notClickedYet tag px-4 text-center pt-4">
+                            <i class="far fa-check-circle checkCircle"></i>
+                            <p>אפשר להזיז ימינה </p>
+                        </div>
+                        <div class="notClickedYet px-4 text-center pt-4">
+                            <i class="tag far fa-check-circle checkCircle"></i>
+                            <p>או שמאלה</p>
+                        </div>
+                        <div class="notClickedYet px-4 text-center pt-4">
+                            <i class="far fa-check-circle checkCircleGrey"></i>
+                            <p>מבחנים טכנים</p>
+                        </div>
+                        <div class="notClickedYet px-4 text-center pt-4">
+                            <i class="far fa-check-circle checkCircleGrey"></i>
+                            <p>מבחנים מילוליים</p>
+                        </div>
+                        <div class="notClickedYet px-4 text-center pt-4">
+                            <i class="far fa-check-circle checkCircleGrey"></i>
+                            <p>מבחנים לוגיים</p>
+                        </div>
+                        <div class="notClickedYet px-4 text-center pt-4">
+                            <i class="far fa-check-circle checkCircleGrey"></i>
+                            <p>אנגלית</p>
+                        </div>
+                        <div class="notClickedYet px-4 text-center pt-4">
+                            <i class="far fa-check-circle checkCircleGrey "></i>
+                            <p>מבחני אישיות</p>
+                        </div>
+                        <div class="notClickedYet px-4 text-center pt-4">
+                            <i class="far fa-check-circle checkCircleGrey "></i>
+                            <p>עבודת בית</p>
+                        </div>
+                    </div>
+                </div>
+                <i id="slide" class="twoArows fas fa-chevron-left icons" onclick="goToLeft()" style="color: black;"></i>
+
+            </div>
+        </div>
+        <img src="./img/background.jpg" class="desktop">
+    </div>
+
+    <!--first section-->
+    <div class=" mt-5 mx-auto header-container-second">
+        <div class=" d-flex flex-wrap">
+            <div class="content flex-grow-1">
+                <h4 class="bolds startPading">החלק הראשון</h4>
+                <div class="text-center backGround border py-4 my-4">
+                    <p class="bolds">התרגיל הבא:</p>
+                    <h5 class="bolds">חשבון: סדרות - רמה 1 גירסה 4</h5>
+                    <div class="d-flex justify-content-center pt-3">
+                        <i class="far fa-clock pe-1 desktop" style="color: grey;"></i>
+                        <p class="mobile">משך התירגול 06:30 דק'</p>
+                        <p class="desktop">06:30 דק'</p>
+                    </div>
+                    <button type="button" class="btn midContentButton">
+                        <a style="color: aliceblue;">התחל תירגול</a>
+                    </button>
+                </div>
+
+                <h5 class="mt-5 bolds border-bottom startPading">
+                    מבחנים כלולים בפרק זה:
+                </h5>
+
+                <!--collpase-->
+                <div class="collpase tests ">
+                    <div class="openBtn1 first-level level-wrapper open ">
+                        <div class="other justify-content-between border-bottom py-3" onclick="CollapseToggle(this)" data-listner="second-level">
+                            <div class="d-flex justify-content-between px-2">
+                                <div class="d-flex justify-content-between py-3">
+                                    <i class="far fa-check-circle checkCircle"></i>
+                                    <div class="bolds me-4">תלחץ פה</div>
+                                </div>
+                                <i class="fas fa-chevron-down" style="align-self: center;"></i>
+                            </div>
+                            <div class="mt-2" style="align-self: center;">
+                                <p class="uSuccess">תרגלת 2/6 מבחנים</p>
+                            </div>
+                        </div>
+                        <!--second-level-->
+                        <div id="second-level" class="level-wrapper ">
+
+                            <div class="test-content pe-4 border-bottom level">
+                                <div class="d-flex flex-wrap justify-content-between mt-3 bolds">
+                                    <div class="d-flex ">
+                                        <i class="far fa-check-circle checkCircle placmentCheckCircle "></i>
+                                        <p style="margin-left: 4rem;  align-self: center; ">
+                                            חשבון: בעיות בחשבון (אחוזים) <br> סדרות רמה 1 גרסה 1
+                                        </p>
+                                    </div>
+                                    <p style="align-self: center;">
+                                        12/07/2020 | ציון: 8
+                                    </p>
+                                    <a href="" style="align-self: center;">עוד</a>
+                                    <button class="btn sideBtn">
+                                        תרגל שוב
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="test-content d-flex flex-wrap pe-4 justify-content-between border-bottom level"
+                                onclick="CollapseToggle(this)">
+                                <div class="d-flex bolds">
+                                    <i class="far fa-play-circle checkCircle"></i>
+                                    <div class="d-flex mt-3 ">
+                                        <p style="padding-right: 1rem;">
+                                            וידאו הדרכה
+                                        </p>
+                                    </div>
+                                </div>
+                                <button class="btn sideBtn sideBtnWatch" >
+                                    לצפיה
+                                </button>
+                            </div>
+
+                            <div class="test-content  spaicelLayer level" onclick="CollapseToggle(this)" data-listner="third-level">
+                                <div class="mt-3 d-flex flex-wrap justify-content-between border-bottom bolds spaicelLayers">
+                                    <div class="d-flex">
+                                        <i class="far fa-check-circle checkCircle placmentCheckCircle"></i>
+                                        <p style="margin-left: 4rem;  align-self: center; ">
+                                          גם זה נפתח :) <br> תלחץ ותנסה
+                                        </p>
+                                    </div>
+                                    <p style="align-self: center;">
+                                        12/08/2020 | ציון: 9
+                                    </p>
+                                    <a href="" style="align-self: center;">עוד</a>
+                                    <button class="btn sideBtn">
+                                        תרגל שוב
+                                    </button>
+                                </div>
+                                <!--third level-->
+                                <div id="third-level" class="level-wrapper">
+                                    <div
+                                        class="d-flex level  justify-content-between py-4 px-4  border-bottom backGround bolds">
+                                        <div class="other">
+                                            <div class="d-flex justify-content-between info-content ">
+                                                <p>#3</p>
+                                                <p>12/08/2020</p>
+                                                <p>ציון 7</p>
+                                            </div>
+                                            <div class="progress spaSrogress">
+                                                <div class="progress-bar w-75" role="progressbar" aria-valuenow="70"
+                                                    aria-valuemin="0" aria-valuemax="100"
+                                                    style="background: rgb(76, 209, 59);">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" style="align-self: center;">דו"ח תוצאות</a>
+                                    </div>
+                                    <div
+                                        class="d-flex level  justify-content-between py-4 px-4  border-bottom backGround bolds">
+                                        <div class="other">
+                                            <div class="d-flex justify-content-between info-content ">
+                                                <p>#2</p>
+                                                <p>11/08/2018</p>
+                                                <p>ציון 4</p>
+                                            </div>
+                                            <div class="progress spaSrogress">
+                                                <div class="progress-bar w-25" role="progressbar" aria-valuenow="40"
+                                                    aria-valuemin="0" aria-valuemax="100"
+                                                    style="background: rgb(76, 209, 59);">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" style="align-self: center;">דו"ח תוצאות</a>
+                                    </div>
+                                    <div class="d-flex level  justify-content-between py-4 px-4  border-bottom backGround bolds">
+                                        <div class="other">
+                                            <div class="d-flex justify-content-between info-content ">
+                                                <p>#1</p>
+                                                <p>01/05/2016</p>
+                                                <p>ציון 5</p>
+                                            </div>
+                                            <div class="progress spaSrogress">
+                                                <div class="progress-bar w-50" role="progressbar" aria-valuenow="50"
+                                                    aria-valuemin="0" aria-valuemax="100"
+                                                    style="background: rgb(76, 209, 59);">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" style="align-self: center;">דו"ח תוצאות</a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="test-content pe-4 border-bottom level">
+                                <div class="d-flex flex-wrap justify-content-between mt-3 bolds">
+                                    <div class="d-flex ">
+                                        <i class="far fa-check-circle checkCircleGrey placmentCheckCircle "></i>
+                                        <p style="margin-left: 4rem;  align-self: center; ">
+                                            חשבון: בעיות בחשבון (אחוזים) <br> סדרות רמה 1 גרסה 1
+                                        </p>
+                                    </div>
+                                    <button class="btn midContentButton-small sideBtnWatch">
+                                        התחל תרגול
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="test-content pe-4 border-bottom level">
+                                <div class="d-flex flex-wrap justify-content-between mt-3 bolds">
+                                    <div class="d-flex ">
+                                        <i class="far fa-file-alt checkCircleGrey placmentCheckCircle"></i>
+                                        <p style="margin-left: 4rem;  align-self: center; ">
+                                            חשבון: בעיות בחשבון (אחוזים) <br> סדרות רמה 1 גרסה 1
+                                        </p>
+                                    </div>
+                                    <button class="btn midContentButton-small sideBtnWatch">
+                                        לקריאה
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="test-content pe-4 border-bottom level">
+                                <div class="d-flex flex-wrap justify-content-between mt-3 bolds">
+                                    <div class="d-flex ">
+                                        <i class="far fa-check-circle checkCircleGrey placmentCheckCircle "></i>
+                                        <p style="margin-left: 4rem;  align-self: center; ">
+                                            חשבון: בעיות בחשבון (אחוזים) <br> סדרות רמה 1 גרסה 1
+                                        </p>
+                                    </div>
+                                    <button class="btn midContentButton-small sideBtnWatch">
+                                        התחל תרגול
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="test-content pe-4 border-bottom level">
+                                <div class="d-flex flex-wrap justify-content-between mt-3 bolds">
+                                    <div class="d-flex ">
+                                        <i class="far fa-check-circle checkCircleGrey placmentCheckCircle "></i>
+                                        <p style="margin-left: 4rem;  align-self: center; ">
+                                            חשבון: בעיות בחשבון (אחוזים) <br> סדרות רמה 1 גרסה 1
+                                        </p>
+                                    </div>
+                                    <button class="btn midContentButton-small sideBtnWatch">
+                                        התחל תרגול
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="test-content pe-4 border-bottom level">
+                                <div class="d-flex flex-wrap justify-content-between mt-3 bolds">
+                                    <div class="d-flex ">
+                                        <i class="far fa-check-circle checkCircleGrey placmentCheckCircle "></i>
+                                        <p style="margin-left: 4rem;  align-self: center; ">
+                                            חשבון: בעיות בחשבון (אחוזים) <br> סדרות רמה 1 גרסה 1
+                                        </p>
+                                    </div>
+                                    <button class="btn midContentButton-small sideBtnWatch">
+                                        התחל תרגול
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="openBtn1 open px-2" data-target="second-level" data-listner="second-level">
+                        <div class="other justify-content-between border-bottom py-3">
+                            <div class="d-flex justify-content-between ">
+                                <div class="d-flex justify-content-between py-3 ">
+                                    <i class="far fa-check-circle checkCircle"></i>
+                                    <div class="bolds me-4">הסקה כמותית</div>
+                                </div>
+                                <i class="fas fa-chevron-down" style="align-self: center;"></i>
+                            </div>
+                            <div class="mt-2" style="align-self: center;">
+                                <p class="uSuccess">תרגלת 8/8 מבחנים</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <!--second section-->
+            <div class="sidebar">
+                <div class="border-bottom">
+                    <div class="my-2 bolds">משוב</div>
+                    <div class="d-flex stars ">
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="py-2">תודה על המשוב</p>
+                </div>
+                <div class="border-bottom">
+                    <div class="my-3 py-2 bolds">לקוחות יקרים:</div>
+                    <p>זוהי ערכת הכנה מורחבת,
+                        <br> לורם אימפוס דולור סיט אמט,
+                        <br> קונסקטורר אדיפיסינג אלית קווזי במר מודוף.
+                        <br> אודיפו בלאסטיק מונופץ
+                    </p>
+                </div>
+                <div>
+                    <div class=" my-3 bolds">קבצי עזר</div>
+                    <div class="d-flex">
+                        <i class="far fa-play-circle icons"></i>
+                        <p class="m-0 p-1"> וידאו הדרכה 2 </p>
+                    </div>
+                    <div class="d-flex">
+                        <i class="far fa-file-alt icons"></i>
+                        <p class="m-0 p-1"> קובץ הדרכה </p>
+                    </div>
+                    <div class="d-flex">
+                        <i class="far fa-file-alt icons"></i>
+                        <p class="m-0 p-1"> וידאו הדרכה 2 </p>
+                    </div>
+                    <a class="ms-3" href="#">לכל קבצי העזר</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--footer-->
+    <footer class="mt-5" id="siteFooter" style="position:relative">
+        <div class="container no-print">
+            <div class="footerRows desktop">
+                <div>
+                    <div class="footerColorfulCheckMark hidden-sm hidden-xs">
+                        <img src="img/footer_V_Desktop.png" alt="V">
+                    </div>
+                </div>
+            </div>
+            <div class="hidden-lg hidden-md mobile footerColorfulCheckMarkMobile">
+                <img src="img/footer_V_Desktop.png" alt="V" style="    width: 3.5rem;">
+            </div>
+
+            <div class="container no-print">
+                <div class="row marginTop" dir="rtl">
+                    <div class="col-md-4">
+                        <div class="title ">
+                            <div class="footerTitle blue">אתגר HTML</div>
+                        </div>
+                        <p class="footerContentText">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית נולום ארווס סאפיאן - פוסיליס קוויס,
+                             אקווזמן קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק.
+                              להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורךגולר
+                        </p>
+                    </div>
+                    <div class="col-md-2 col-md-offset-2">
+                        <div class="title footerTitle green">
+                            <div>החברה</div>
+                            <span
+                                class="plus-minus-toggle collapsed hidden-lg hidden-md text-white font-weight-regular floatLeft"></span>
+                        </div>
+                        <ul class="desktop">
+                            <li>אודות</li>
+                            <li>ממליצים</li>
+                            <li>הצוות שלנו</li>
+                            <li>דרושים</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-md-2 ">
+                        <div class="title footerTitle red">
+                            <div>עזרה</div>
+                            <span
+                                class="plus-minus-toggle collapsed hidden-lg hidden-md text-white font-weight-regular floatLeft"></span>
+                        </div>
+                        <ul class=" desktop">
+                            <li>צור-קשר</li>
+                            <li>פתרון בעיות טכניות</li>
+                            <li>תקנון</li>
+                            <li>פרטיות</li>
+                            <li>אבטחה</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-2 ">
+                        <div class="title footerTitle purple">
+                            <div>שיתופי פעולה</div>
+                            <span
+                                class="plus-minus-toggle collapsed hidden-lg hidden-md text-white font-weight-regular floatLeft"></span>
+                        </div>
+                        <ul class="desktop">
+                            <li>הצטרף כשותף</li>
+                            <li>סדנאות והרצאות</li>
+                            <li>רכישה מרוכזת</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footerRows">
+                <div class="footerSignatureLeft col-sm-12">
+                    כל הזכויות שמורות לשירה 
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+</body>
+
+
+</html>
+
